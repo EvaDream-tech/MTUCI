@@ -518,7 +518,7 @@
 # user.set_password("new_password")
 # print(user.check_password("new_password"))
 
-# class Vehicle:
+class Vehicle:
 #     def __init__(self, make, model):
 #         self.make = make
 #         self.model = model
