@@ -518,7 +518,8 @@
 # user.set_password("new_password")
 # print(user.check_password("new_password"))
 
-class Vehicle:
+# Задание 2: Полиморфизм и наследование
+# class Vehicle:
 #     def __init__(self, make, model):
 #         self.make = make
 #         self.model = model
