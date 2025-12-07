@@ -10,7 +10,7 @@ class Manager(Employee):
         Employee.__init__(self, name, id)
         self.department = department
     def get_info(self):
-        return "Имя сотрудника: {}, Идентификационный номер: {}".format(self.name, self.id)
+        return "Менеджер: {}, Идентификационный номер: {}".format(self.name, self.id)
     def manage_project(self):
         return "Управляет проектами: {}".format(self.department)
 class Technician(Employee):

@@ -20,20 +20,20 @@ user.set_password("new_password")
 print(user.check_password("new_password"))
 
 # Задание 2: Полиморфизм и наследование
-# class Vehicle:
-#     def __init__(self, make, model):
-#         self.make = make
-#         self.model = model
-#     def get_info(self):
-#         return "Марка машины: {}, Модель машины, {}".format(self.make, self.model)
-# class Car(Vehicle):
-#     def __init__(self, make, model, fuel_type):
-#         super().__init__(make, model)
-#         self.fuel_type = fuel_type
-#     def get_info(self):
-#         return "Марка машины: {}, Модель машины, {}, Тип топлива {}".format(self.make, self.model, self.fuel_type)
-# vehicle = Vehicle("Land_Rover","Discovery")
-# car = Car("Mercedes_benz", "E500", 95)
-#
-# print(vehicle.get_info())
-# print(car.get_info())
+class Vehicle:
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+    def get_info(self):
+        return "Марка машины: {}, Модель машины, {}".format(self.make, self.model)
+class Car(Vehicle):
+    def __init__(self, make, model, fuel_type):
+        super().__init__(make, model)
+        self.fuel_type = fuel_type
+    def get_info(self):
+        return "Марка машины: {}, Модель машины, {}, Тип топлива {}".format(self.make, self.model, self.fuel_type)
+vehicle = Vehicle("Land_Rover","Discovery")
+car = Car("Mercedes_benz", "E500", 95)
+
+print(vehicle.get_info())
+print(car.get_info())
